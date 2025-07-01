@@ -686,7 +686,7 @@ Camera:
   m_ShutterSpeed: 0.005
   m_Aperture: 16
   m_FocusDistance: 10
-  m_FocalLength: 90
+  m_FocalLength: 80
   m_BladeCount: 5
   m_Curvature: {x: 2, y: 11}
   m_BarrelClipping: 0.25
@@ -701,7 +701,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 15.189287
+  field of view: 17.061533
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -959,13 +959,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220048591}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.006, z: 0}
+  m_LocalRotation: {x: 0.22731453, y: -0.028969066, z: -0.055023205, w: 0.97183406}
+  m_LocalPosition: {x: -0.00000000105531, y: -0.006, z: 0.0000000027935854}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 26.017, y: -5.192, z: -7.681}
 --- !u!1 &1246680514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1656,6 +1656,18 @@ PrefabInstance:
       value: Mountain troll
       objectReference: {fileID: 0}
     - target: {fileID: 9207356172915038887, guid: 96060ca5baa836b44ae15e8f49db3463, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9207356172915038887, guid: 96060ca5baa836b44ae15e8f49db3463, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9207356172915038887, guid: 96060ca5baa836b44ae15e8f49db3463, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9207356172915038887, guid: 96060ca5baa836b44ae15e8f49db3463, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
       objectReference: {fileID: 0}
@@ -1773,6 +1785,18 @@ PrefabInstance:
       propertyPath: src
       value: 
       objectReference: {fileID: 243327551}
+    - target: {fileID: 7157352823206755900, guid: 7a90f5e01c4d67945a3a801a62dfcc53, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7157352823206755900, guid: 7a90f5e01c4d67945a3a801a62dfcc53, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7157352823206755900, guid: 7a90f5e01c4d67945a3a801a62dfcc53, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.85
+      objectReference: {fileID: 0}
     - target: {fileID: 7157352823206755900, guid: 7a90f5e01c4d67945a3a801a62dfcc53, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1
