@@ -7,7 +7,7 @@ public class ChangeTrolls : MonoBehaviour
 {
     public GameObject text;
     public GameObject[] trolls;
-    int[] newCords = new int[3]{1, 0, -1};
+    int[] newCords = new int[3]{2, 0, -2};
     bool unblock = true;
 
     public void left()
@@ -17,11 +17,11 @@ public class ChangeTrolls : MonoBehaviour
             GameObject tmp = trolls[0];
             for (int i = 0; i < 3; i++)
             {
-                newCords[i] = (int)math.round(trolls[i].transform.position.x) - 1;
-                if (newCords[i] < -1)
+                newCords[i] = (int)math.round(trolls[i].transform.position.x) - 2;
+                if (newCords[i] < -2)
                 {
-                    trolls[i].transform.position = new Vector3(1, trolls[i].transform.position.y, trolls[i].transform.position.z);
-                    newCords[i] = 1;
+                    trolls[i].transform.position = new Vector3(2, trolls[i].transform.position.y, trolls[i].transform.position.z);
+                    newCords[i] = 2;
                 }
                 else if (newCords[i] == 0)
                     tmp = trolls[i];
@@ -38,11 +38,11 @@ public class ChangeTrolls : MonoBehaviour
             GameObject tmp = trolls[0];
             for (int i = 0; i < 3; i++)
             {
-                newCords[i] = (int)math.round(trolls[i].transform.position.x) + 1;
-                if (newCords[i] > 1)
+                newCords[i] = (int)math.round(trolls[i].transform.position.x) + 2;
+                if (newCords[i] > 2)
                 {
-                    trolls[i].transform.position = new Vector3(-1, trolls[i].transform.position.y, trolls[i].transform.position.z);
-                    newCords[i] = -1;
+                    trolls[i].transform.position = new Vector3(-2, trolls[i].transform.position.y, trolls[i].transform.position.z);
+                    newCords[i] = -2;
                 }
                 else if (newCords[i] == 0)
                     tmp = trolls[i];
@@ -63,8 +63,16 @@ public class ChangeTrolls : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-            Vector3 tmp = new Vector3(newCords[i], trolls[i].transform.position.y, trolls[i].transform.position.z);
-            trolls[i].transform.position = Vector3.Lerp(trolls[i].transform.position, tmp, 4*Time.deltaTime);
+            
+            if (math.abs(newCords[i] - trolls[i].transform.position.x) < 0.0001f)
+            {
+                trolls[i].transform.position = new Vector3(newCords[i], trolls[i].transform.position.y, trolls[i].transform.position.z);
+            }
+            else
+            {
+                Vector3 tmp = new Vector3(newCords[i], trolls[i].transform.position.y, trolls[i].transform.position.z);
+                trolls[i].transform.position = Vector3.Lerp(trolls[i].transform.position, tmp, 4 * Time.deltaTime);
+            }
         }
     }
 }
