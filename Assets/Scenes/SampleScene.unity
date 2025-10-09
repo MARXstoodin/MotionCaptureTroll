@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &113659544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1851451534338282575, guid: 7875de1cbf5692248825b43fb134f809, type: 3}
+  m_PrefabInstance: {fileID: 3365051244783616936}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &127285271
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,9 +369,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 598594784}
   trolls:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1151828377}
+  - {fileID: 113659544}
+  - {fileID: 742105892}
 --- !u!1 &598594784
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +572,11 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &742105892 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7502951711146828934, guid: 7a90f5e01c4d67945a3a801a62dfcc53, type: 3}
+  m_PrefabInstance: {fileID: 7496702950346424632}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &863251326
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,6 +782,11 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &1151828377 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8398308426532880413, guid: 96060ca5baa836b44ae15e8f49db3463, type: 3}
+  m_PrefabInstance: {fileID: 6564246797343997120}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1218679470
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,7 +969,7 @@ Transform:
   m_GameObject: {fileID: 1220048591}
   serializedVersion: 2
   m_LocalRotation: {x: 0.22731453, y: -0.028969066, z: -0.055023205, w: 0.97183406}
-  m_LocalPosition: {x: -0.00000000105531, y: -0.006, z: 0.0000000027935854}
+  m_LocalPosition: {x: 0.002, y: 0.011, z: 0.009}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
