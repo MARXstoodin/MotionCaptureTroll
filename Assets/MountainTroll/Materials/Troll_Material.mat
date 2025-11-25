@@ -12,6 +12,7 @@ Material:
   m_Parent: {fileID: 2100000, guid: b58698f09dff9844eb32e78ab198c719, type: 2}
   m_ModifiedSerializedProperties: 2
   m_ValidKeywords:
+  - _EMISSION
   - _METALLICSPECGLOSSMAP
   - _NORMALMAP
   - _OCCLUSIONMAP
@@ -68,4 +69,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 9
+  version: 10
