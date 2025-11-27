@@ -490,8 +490,8 @@ MonoBehaviour:
   text: {fileID: 598594784}
   trollObjects:
   - {fileID: 113659544}
-  - {fileID: 742105892}
   - {fileID: 1151828377}
+  - {fileID: 742105892}
   - {fileID: 1329274222}
 --- !u!1 &598594784
 GameObject:
@@ -704,6 +704,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7502951711146828934, guid: 7a90f5e01c4d67945a3a801a62dfcc53, type: 3}
   m_PrefabInstance: {fileID: 7496702950346424632}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &742105896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742105892}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 79860487, guid: d980a0424c4cba146a389b3ee3be61ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: MoCap.dll::Dollars.MoCapSrcWithAnimator
+  src: {fileID: 243327551}
 --- !u!1 &863251326
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,7 +795,6 @@ GameObject:
   m_Component:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
-  - component: {fileID: 963194226}
   - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
@@ -791,14 +803,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &963194226
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
 --- !u!20 &963194227
 Camera:
   m_ObjectHideFlags: 0
@@ -925,7 +929,6 @@ GameObject:
   - component: {fileID: 1220048595}
   - component: {fileID: 1220048594}
   - component: {fileID: 1220048593}
-  - component: {fileID: 1220048592}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -933,28 +936,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!64 &1220048592
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1220048591}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1220048593
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1609,6 +1590,10 @@ PrefabInstance:
       propertyPath: src
       value: 
       objectReference: {fileID: 243327551}
+    - target: {fileID: 5186637153357964767, guid: 7a90f5e01c4d67945a3a801a62dfcc53, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7157352823206755900, guid: 7a90f5e01c4d67945a3a801a62dfcc53, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -1668,7 +1653,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7502951711146828934, guid: 7a90f5e01c4d67945a3a801a62dfcc53, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 742105896}
   m_SourcePrefab: {fileID: 100100000, guid: 7a90f5e01c4d67945a3a801a62dfcc53, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

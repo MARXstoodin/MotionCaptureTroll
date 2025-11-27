@@ -87,7 +87,7 @@ public class ChangeTrolls : MonoBehaviour
         text.GetComponent<Text>().text = trollObjects[0].name;
         foreach(GameObject troll in trollObjects.Skip(1))
         {
-            trolls.Add(new Troll(troll, false, 2));
+            trolls.Add(new Troll(troll, true, 2));
         }
     }
 }
